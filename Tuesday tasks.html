@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// Write a JavaScript program to list the properties of a JavaScript object.
+// Sample object:
+// var student = {
+// name : "David Rayy",
+// sclass : "VI",
+// rollno : 12 };
+// Sample Output: name,sclass,rollno
+
+
+var student = {
+    name : "Awais",
+    class : "VI" ,
+    rollno : 11
+
+};
+
+var obj;
+obj=student;
+console.log(Object.keys(obj));
+
+
+// Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
+
+var student = {
+name : "David Rayy",
+sclass : "VI",
+rollno : 12 };
+
+console.log(student);
+
+delete student.rollno;
+
+console.log(student);
+
+// Write a JavaScript function to split a string and convert it into an array of words.
+// Test Data :
+// console.log(string_to_array("Robin Singh"));
+// ["Robin", "Singh"]
+
+
+
+var names = 'Harry,John,Clark,Peter,Rohn,Alice';
+var nameArr = names.split(',');
+console.log(nameArr);
+
+
+// Write a JavaScript function to remove a specific element from an array.
+// Test data :
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+// [2, 9, 6]
+
+
+function remove(array, n)
+ {
+    const index = array.indexOf(n);
+    array.splice(index, 1);
+    return array;
+ }
+
+console.log(remove([1, 2, 3, 4, 5], 2));
+
+
+// Write a JavaScript program to sort the items of an array. 
+
+var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+console.log(arr1);
+arr1.sort()
+console.log("sorted array: " + arr1);
+
+
+
+    </script>
+</body>
+</html>
