@@ -74,11 +74,26 @@ console.log(remove([1, 2, 3, 4, 5], 2));
 
 // Write a JavaScript program to sort the items of an array. 
 
-var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
-console.log(arr1);
-arr1.sort()
-console.log("sorted array: " + arr1);
+// var arr1 = [ 3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+// console.log(arr1);
+// arr1.sort()
+// console.log("sorted array: " + arr1);
 
+const array=[1,-1,2,-2,4,5,8,-9];
+            var temp;
+            for(var i=0;i<array.length;i++)
+            {
+                for(var j=i+1;j<array.length;j++)
+                {
+                    if(array[i]>array[j])
+                    {
+                        temp=array[i];
+                        array[i]=array[j];
+                        array[j]=temp;
+                    }
+                }
+            }
+            console.log(array);
 
 
     </script>
